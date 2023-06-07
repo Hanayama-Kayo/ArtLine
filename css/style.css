@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.head-about .container{
+    display: flex;
+    gap: 100px;
+    justify-content: flex-end;
+    padding-top: 10px;
+    color: gray;
+}
+.head-links{
+    display: flex;
+    gap: 15px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar{
+    background-color: #D34C56;
+    padding: 20px 20px 20px 20px;
+    transition: all 0.5s;
+}
+.navbar .right ul{
+    display: flex;
+    gap: 50px;
+}
+.left ul li a{
+    font-size: 30px;
+    color: white;
+    transition: all .5s;
+}
+.right ul li a{
+    color: white;
+    font-size: 17px;
+}
+.right ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width .3s;
+}
+.right ul li a:hover::after {
+    width: 100%;
+}
+.left ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width .3s;
+}
+.left ul li a:hover::after {
+    width: 100%;
+}
+.humburger{
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.close{
+    display: none;
+}  
+
+html{
+    scroll-behavior: smooth;
+}
+.header-content{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background: url(../images/IMG_1463.PNG) no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    text-align: center  ;
+}
+
+.header-content-about {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.header-content h1{
+    color: #D34C56;
+    font-size: 75px;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.header-content  p {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    max-width: 700px; 
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    margin: auto;
+}
+.header-part-footer {
+    margin-top: 200px;
+
+}
+.header-part-footer a{
+    animation-name: down-arrow;
+    animation-duration:  0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    position: relative;
+}
+@keyframes down-arrow{
+    from{
+        top: 20px;
+    }
+    to{
+        top: 0px;
+    }
+}
+.content-1{
+    background-color: #FAF3E1;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.content-1-header h1{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.content-1-header p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.content-1-rows{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.card{
+    max-width: 600px;
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+}
+.card h1{
+    margin-left: 20px;
+}
+.card p{
+    padding-left: 80px;
+    
+}
+.content-1-footer-row{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap ;
+}
+.navbar-fixed{
+    position: fixed;
+    width: 100%;
+}
+.head-about{
+    background-color: white;
+}
+.navbar-shrink{
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    
+    transition-timing-function: linear;
+} 
+.backtop button{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: -50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: 30px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background-color:#D34C56;
+    z-index: 999;
+}
+
