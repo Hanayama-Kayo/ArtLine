@@ -393,7 +393,7 @@ html{
     gap: 60px;
 }
 .content-4{
-    padding-top: 50px;
+    padding-top:100px;
     padding-bottom: 50px;
     background-color: rgb(243, 243, 243);
 
@@ -637,7 +637,7 @@ box-shadow: 1px 5px 15px 17px rgba(34, 60, 80, 0.13);
 }
 .content-6{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 70px;
     text-align: center;
     background-color: rgb(243, 243, 243);
@@ -747,7 +747,7 @@ box-shadow: 2px 5px 26px 0px rgba(34, 60, 80, 0.2);
     outline: 1px solid white;
 }
 .content-8{
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
 }
